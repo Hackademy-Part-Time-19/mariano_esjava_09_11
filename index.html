@@ -52,12 +52,39 @@
 
             var eta = annoAttuale - annoDiNascita;
 
-            return console.log(eta)
+            etaPer100 = eta - 100;
+
+            etaPer100 = Math.abs(etaPer100);
+
+            return console.log("Hai " + eta + " anni, e ti mancano " + etaPer100 + " per arrivare a 100 anni." )
+
+
 
 
         }
 
-        CalcoloEtà(1966)
+        //CalcoloEtà(1966)
+
+        function Operation(){
+
+            var numero1 = parseInt(prompt("Inserisci il primo numero:"))
+            var numero2 = parseInt(prompt("Inserisci il secondo numero:"))
+
+            var somma1 = numero1 + numero2;
+            var sottrazione = numero1 - numero2;
+            var moltiplicazione = numero1 * numero2;
+            var divisione = numero1 / numero2;
+            var potenza = numero1 ^ numero2;
+
+            return alert("La somma tra " + numero1 + " e " + numero2 +" è " + somma1 + "\n"+
+                         "La differenza tra " + numero1 + " e " + numero2 +" è " + sottrazione + "\n"+
+                         "Il prodotto tra " + numero1 + " e " + numero2 +" è " + moltiplicazione + "\n"+
+                         "Il risultato della divizione tra " + numero1 + " e " + numero2 +" è " + divisione + "\n"+
+                          numero1 + " elevato per " + numero2 + " è " + potenza )
+
+        }
+
+        Operation()
 
     </script>
 
